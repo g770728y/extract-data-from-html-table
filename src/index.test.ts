@@ -40,7 +40,13 @@ describe("extractArrayFromTable", () => {
   });
 
   it("case5:with rowspan/colspan", () => {
-    const result = [[{ value: "", rowspan: 2, colspan: 1 }]];
+    const result = [[{ value: "", rowspan: 2, colspan: 1 }], [null]];
+    console.log(
+      '      extractArrayFromTable( "<html><table><tr><td rowspan=2></td></tr></table></html>")',
+      extractArrayFromTable(
+        "<html><table><tr><td rowspan=2></td></tr></table></html>"
+      )
+    );
     expect(
       extractArrayFromTable(
         "<html><table><tr><td rowspan=2></td></tr></table></html>"

@@ -12,9 +12,9 @@ export function extractArrayFromTable(
     return [];
   }
 
-  return _getArrayFromTable(div.children[0], []);
-  //const rawArray = _getArrayFromTable(div.children[0], []);
-  // return normalizedArray(rawArray);
+  // return _getArrayFromTable(div.children[0], []);
+  const rawArray = _getArrayFromTable(div.children[0], []);
+  return rawArray.length > 0 ? normalizedArray(rawArray) : rawArray;
 }
 
 export interface RawCell {
