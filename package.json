@@ -1,6 +1,6 @@
 {
   "name": "extract-data-from-html-table",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "module": "dist/index.js",
   "author": "g770728y",
   "license": "MIT",
